@@ -1,3 +1,14 @@
+/* general font styling */
+body {
+  max-width: 40em;
+  font-family: sans-serif;
+}
+p {
+  font-size: 1.5em;
+  line-height: 1.4;
+}
+
+/* project link styling */
 #context-content {
   color: black;
   background-color: yellow;
