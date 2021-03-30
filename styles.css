@@ -1,21 +1,98 @@
 /* general font styling */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "neue-haas-grotesk-display", sans-serif;
+  font-weight: 500;
+  color: #333;
+  box-sizing: border-box;
+}
 body {
+  background-image: url("bg.png");
+}
+main {
+  margin: 0 auto;
+  background-color: white;
   max-width: 40em;
-  font-family: sans-serif;
+  width: 100%;
+  padding: 20px;
+  height: auto;
+}
+h1 {
+  font-weight: 600;
+}
+h2 {
+  margin: 4px 0px 12px;
+  font-size: 12px;
+}
+hr {
+  margin-top: 48px;
+}
+p.about-text {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.3;
+}
+p.work-desc {
+  margin-left: 0.75em;
 }
 p {
   font-size: 1.5em;
   line-height: 1.4;
 }
-
-/* project link styling */
-#context-content {
-  color: black;
-  background-color: yellow;
-  font-weight: bold;
+a {
+  text-decoration: none;
+  font-weight: 600;
 }
-#someparts {
-  color: white;
-  background-color: black;
+a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 0.25rem;
+}
+a:visited {
+  color: rgb(204, 0, 0);
+}
+.contact-item {
+  margin-bottom: 1em;
+}
+a.contact-link {
+  font-weight: 600;
+  margin-left: 1em;
+}
+h3 {
+  margin: 0;
+  padding: 0;
+}
+ol#work {
+  list-style: none;
+  counter-reset: work-item-counter 4;
+}
+ol li {
+  counter-increment: work-item-counter -1;
+}
+ol li::before {
+  display: inline-block;
+  /* width: 0.6em; */
+  content: counter(work-item-counter);
+  vertical-align: super;
   font-weight: bold;
+  font-size: smaller;
+}
+.work-item {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 1rem;
+}
+.work-item p {
+  color: #777;
+  font-weight: normal;
+  font-size: 16px;
+}
+#con-siz-spa:hover {
+  text-decoration-color: #f85e17;
+}
+#context-content:hover {
+  text-decoration-color: yellow;
+}
+#someparts:hover {
+  text-decoration-color: black;
 }
