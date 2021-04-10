@@ -15,8 +15,8 @@ main {
   background-color: white;
   max-width: 40em;
   width: 100%;
-  padding: 20px;
-  height: auto;
+  padding: 3rem;
+  height: 100vh;
 }
 h1 {
   font-weight: 600;
@@ -62,9 +62,10 @@ h3 {
   margin: 0;
   padding: 0;
 }
+/* update this value every time a new project is added */
 ol#work {
   list-style: none;
-  counter-reset: work-item-counter 4;
+  counter-reset: work-item-counter 5;
 }
 ol li {
   counter-increment: work-item-counter -1;
@@ -86,6 +87,10 @@ ol li::before {
   color: #777;
   font-weight: normal;
   font-size: 16px;
+}
+/* add a new style for every new project */
+#replica-nyt:hover {
+  text-decoration-color: black;
 }
 #con-siz-spa:hover {
   text-decoration-color: #f85e17;
