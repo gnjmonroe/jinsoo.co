@@ -65,7 +65,7 @@ h3 {
 /* update this value every time a new project is added */
 ol#work {
   list-style: none;
-  counter-reset: work-item-counter 5;
+  counter-reset: work-item-counter 6;
 }
 ol li {
   counter-increment: work-item-counter -1;
@@ -89,6 +89,9 @@ ol li::before {
   font-size: 16px;
 }
 /* add a new style for every new project */
+#eshop:hover {
+  text-decoration-color: #fc628b;
+}
 #replica-nyt:hover {
   text-decoration-color: black;
 }
