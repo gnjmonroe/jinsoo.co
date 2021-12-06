@@ -16,7 +16,7 @@ main {
   max-width: 40em;
   width: 100%;
   padding: 3rem;
-  height: 100vh;
+  height: 100%;
 }
 h1 {
   font-weight: 600;
