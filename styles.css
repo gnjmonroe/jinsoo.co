@@ -56,7 +56,6 @@ a:visited {
 }
 a.contact-link {
   font-weight: 600;
-  margin-left: 1em;
 }
 h3 {
   margin: 0;
@@ -84,7 +83,7 @@ ol li::before {
   margin-bottom: 1rem;
 }
 .work-item p {
-  color: #777;
+  color: #555;
   font-weight: normal;
   font-size: 16px;
 }
