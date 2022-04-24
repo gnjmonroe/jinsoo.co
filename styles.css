@@ -65,7 +65,7 @@ h3 {
 /* update this value every time a new project is added */
 ol#work {
   list-style: none;
-  counter-reset: work-item-counter 6;
+  counter-reset: work-item-counter 7;
 }
 ol li {
   counter-increment: work-item-counter -1;
