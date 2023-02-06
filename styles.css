@@ -2,7 +2,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "neue-haas-grotesk-display", sans-serif;
+  font-family: "Pretendard Variable", sans-serif;
   font-weight: 500;
   font-display: optional;
   color: #333;
@@ -34,9 +34,6 @@ p.about-text {
   font-size: 18px;
   line-height: 1.3;
 }
-p.work-desc {
-  margin-left: 0.75em;
-}
 p {
   font-size: 1.5em;
   line-height: 1.4;
@@ -61,46 +58,4 @@ a.contact-link {
 h3 {
   margin: 0;
   padding: 0;
-}
-/* update this value every time a new project is added */
-ol#work {
-  list-style: none;
-  counter-reset: work-item-counter 7;
-}
-ol li {
-  counter-increment: work-item-counter -1;
-}
-ol li::before {
-  display: inline-block;
-  /* width: 0.6em; */
-  content: counter(work-item-counter);
-  vertical-align: super;
-  font-weight: bold;
-  font-size: smaller;
-}
-.work-item {
-  font-weight: bold;
-  font-size: 18px;
-  margin-bottom: 1rem;
-}
-.work-item p {
-  color: #555;
-  font-weight: normal;
-  font-size: 16px;
-}
-/* add a new style for every new project */
-#eshop:hover {
-  text-decoration-color: #fc628b;
-}
-#replica-nyt:hover {
-  text-decoration-color: black;
-}
-#con-siz-spa:hover {
-  text-decoration-color: #f85e17;
-}
-#context-content:hover {
-  text-decoration-color: yellow;
-}
-#someparts:hover {
-  text-decoration-color: black;
 }
