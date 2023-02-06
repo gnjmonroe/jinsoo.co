@@ -14,7 +14,7 @@ body {
 main {
   background-color: white;
 
-  max-width: 40em;
+  max-width: 65ch;
   width: 100%;
   height: 100%;
   
@@ -25,16 +25,16 @@ h1 {
   font-weight: 600;
 }
 h2 {
-  margin: 4px 0px 12px;
-  font-size: 12px;
+  margin: .25rem 0 .75rem;
+  font-size: .75rem;
 }
 hr {
-  margin-top: 48px;
+  margin-top: 3rem;
 }
 p.about-text {
   font-weight: 400;
-  font-size: 18px;
-  line-height: 1.3;
+  font-size: 1.5rem;
+  line-height: 1.4;
 }
 p {
   font-size: 1.5em;
