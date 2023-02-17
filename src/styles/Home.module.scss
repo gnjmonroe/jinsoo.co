@@ -1,0 +1,138 @@
+@use 'sass:map';
+
+$font-sizes: (
+  'project-header': 1.375rem,
+  'body': 1.125rem,
+  'detail': 0.75rem,
+);
+
+$chip-radius: 6px;
+
+.main {
+  background-color: white;
+
+  max-width: 65ch;
+  min-height: 100vh;
+  width: 100%;
+  height: 100%;
+
+  margin: 0 auto;
+  padding: 2.5rem;
+}
+
+.h1 {
+  font-weight: 600;
+}
+
+.h2 {
+  margin: 3rem 0 0.75rem;
+  font-size: map.get($font-sizes, 'detail');
+
+  width: 100%;
+
+  border-top: 1px solid black;
+  padding-top: 4px;
+}
+
+.aboutText {
+  font-weight: 400;
+  font-size: map.get($font-sizes, 'body');
+  line-height: 1.4;
+
+  margin-bottom: 1.4rem;
+}
+
+.underConstructionTag {
+  display: inline-block;
+
+  margin-bottom: 1rem;
+}
+
+.projectItem {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 2rem;
+
+  .date {
+    font-size: map.get($font-sizes, 'detail');
+    font-weight: 400;
+    line-height: 1;
+
+    margin-bottom: 6px;
+  }
+
+  .titleGithubBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+
+    margin-bottom: 4px;
+  }
+
+  .title {
+    font-size: map.get($font-sizes, 'project-header');
+    font-weight: 500;
+    line-height: 1;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &:visited {
+      color: #333;
+    }
+  }
+
+  :not(a).title:hover {
+    text-decoration-color: transparent;
+  }
+
+  .githubChip {
+    background: #333;
+    color: white;
+
+    font-size: map.get($font-sizes, 'detail');
+    font-weight: 500;
+
+    border-radius: $chip-radius;
+    padding: 4px 8px;
+  }
+
+  .description {
+    font-size: map.get($font-sizes, 'body');
+    font-weight: 350;
+    line-height: 1.4;
+
+    margin-bottom: 6px;
+  }
+
+  .keywords {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .keyword {
+    font-size: map.get($font-sizes, 'detail');
+    font-weight: 400;
+
+    width: fit-content;
+
+    border: 1px solid #333;
+    border-radius: $chip-radius;
+    padding: 4px 8px;
+  }
+}
+
+.contactItem {
+  font-weight: 600;
+  font-size: map.get($font-sizes, 'body');
+
+  display: block;
+
+  margin-bottom: 0.875em;
+}
