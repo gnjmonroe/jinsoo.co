@@ -1,4 +1,4 @@
-const projects: {
+type project = {
   title: string;
   date: string; // YYYY-MM-DD
   link: string | null;
@@ -6,7 +6,9 @@ const projects: {
   githubChipUrl: string | null;
   description: string | null;
   keywords: string[];
-}[] = [
+};
+
+const projects: project[] = [
   {
     title: 'Context/Content',
     date: '2019-12-00',
@@ -14,8 +16,8 @@ const projects: {
     deployStatus: 'archived',
     githubChipUrl: 'https://github.com/gnjmonroe/contextcontent',
     description:
-      "Design and development for a multi-media exhibition at Taubman College. I used the idea of 'sitemap' as a play on words to stage an expansive and inclusive working definition of 'Urban Design' in a spatialized digital format.",
-    keywords: ['HTML/CSS/JS (vanilla)', 'Graphic Design'],
+      "An exhibition site for a multi-media exhibition at Taubman College. A reinterpretation of 'sitemap' is used to stage a new working definition of 'Urban Design'.",
+    keywords: ['HTML/CSS/JS (vanilla)', 'Design'],
   },
   {
     title: 'someparts.parts',
@@ -24,8 +26,8 @@ const projects: {
     deployStatus: 'archived',
     githubChipUrl: 'https://github.com/gnjmonroe/someparts.parts',
     description:
-      'Design and development for an exhibition of a kit of parts capable of being applied to myriad purposes. I appropriated the visual language of spreadsheets to reflect the range of inventory and suggest interaction with items in cells.',
-    keywords: ['HTML/CSS/JS (vanilla)', 'Graphic Design', 'jQuery'],
+      'An exhibition site showcasing a modular kit of parts applicable to myriad purposes. The visual language of spreadsheets highlights the modularity and flexibility of the kit.',
+    keywords: ['HTML/CSS/JS (vanilla)', 'Design', 'jQuery'],
   },
   {
     title: 'PRAUD Website Renewal',
@@ -34,12 +36,12 @@ const projects: {
     deployStatus: 'live',
     githubChipUrl: null, // check for sensitive info
     description:
-      "Redesign and development for an architecture office's website. Implemented a UI based on the visual language of subway maps to illustrate how the office's research themes intersect through different projects over time.",
+      "A portfolio site for an architecture office. The visual language of subway maps illustrate the relationship between the office's research themes and projects.",
     keywords: [
       'React',
       'GraphQL',
       'HTML Canvas',
-      'Graphic Design',
+      'Design',
       'Gatsby',
       'Sanity',
       'Netlify',
@@ -53,9 +55,9 @@ const projects: {
     deployStatus: 'live',
     githubChipUrl: null, // check for sensitive info
     description:
-      "Redesign and development for an urban research and exhibition space platform. Inspired by construction and moving service advertising stickers ubiquitous in Korea to reference the platform's focus on urbanism.",
+      'A portfolio site for an urban research and exhibition space platform. Inspired by advertising stickers in Korea.',
     keywords: [
-      'Graphic Design',
+      'Design',
       'Typescript',
       'React',
       'Gatsby',
@@ -71,7 +73,7 @@ const projects: {
     deployStatus: 'live',
     githubChipUrl: null,
     description:
-      'Redesign and development for a local social activist NGO. A clean (깔끔한) design prioritizing simplicity and performance.',
+      'A blog site for a social activist NGO. It features a clean design prioritizing simplicity and performance.',
     keywords: [
       'Typescript',
       'React',
@@ -89,7 +91,7 @@ const projects: {
     deployStatus: 'ongoing',
     githubChipUrl: null,
     description:
-      'An eCommerce site for courses about the role of BIPOC in graphic design history. Working in a small team, focusing on securely retrieving customer data from APIs and implementing custom interactivity.',
+      'An eCommerce site for online courses. I focus on securely retrieving customer data from APIs and implementing custom interactivity.',
     keywords: [
       'Wordpress',
       'eCommerce',
@@ -108,7 +110,7 @@ const projects: {
     deployStatus: 'archived',
     githubChipUrl: 'https://github.com/gnjmonroe/wawawa',
     description:
-      'Exhibition site presenting livestreams of various parks around the world via the YouTube IFrame Player API.',
+      'An exhibition site presenting livestreams of parks around the world.',
     keywords: [
       'React',
       'Vite',
@@ -126,15 +128,8 @@ const projects: {
     deployStatus: 'archived',
     githubChipUrl: 'https://github.com/gnjmonroe/praud-amplifier',
     description:
-      "Progressive Web App to illustrate the customization potential of client's submission to LG's Smart Cottage exhibition in Yeouido.",
-    keywords: [
-      'React',
-      'TypeScript',
-      'Graphic Design',
-      'PWA',
-      'SCSS',
-      'Netlify',
-    ],
+      "A progressive web app that illustrates the customization potential of the client's submission to LG Space X's Home as a Service exhibition.",
+    keywords: ['React', 'TypeScript', 'Design', 'PWA', 'SCSS', 'Netlify'],
   },
   {
     title: 'jinsoo.co',
