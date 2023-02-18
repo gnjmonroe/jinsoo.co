@@ -112,15 +112,7 @@ const projects: project[] = [
     githubChipUrl: 'https://github.com/gnjmonroe/wawawa',
     description:
       'An exhibition site presenting livestreams of parks around the world.',
-    keywords: [
-      'React',
-      'Vite',
-      'API',
-      'YouTube API',
-      'SVG',
-      'SCSS',
-      'Typescript',
-    ],
+    keywords: ['React', 'Vite', 'YouTube API', 'SVG', 'SCSS', 'Typescript'],
   },
   {
     title: 'PRAUD Amplifer',
