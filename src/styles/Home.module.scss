@@ -45,7 +45,9 @@ $chip-radius: 6px;
 .underConstructionTag {
   display: inline-block;
 
-  margin-bottom: 1rem;
+  width: 100%;
+
+  margin: 0.5rem 0;
 }
 
 .projectItem {
@@ -106,7 +108,7 @@ $chip-radius: 6px;
     font-weight: 350;
     line-height: 1.4;
 
-    margin-bottom: 6px;
+    margin-bottom: 10px;
   }
 
   .keywords {

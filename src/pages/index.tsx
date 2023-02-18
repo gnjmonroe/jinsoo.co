@@ -12,7 +12,7 @@ const UnderConstructionTag = () => (
     href="https://papago.naver.com/?sk=ko&tk=en&st=%EA%B3%B5%EC%82%AC%EC%A4%91" 
     target="_blank" 
     rel="noreferrer">
-    <em>[공사중]</em>
+    <em>&#60;공사 중&#62;</em>
   </a>
 )
 
