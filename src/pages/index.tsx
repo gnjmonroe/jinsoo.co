@@ -27,6 +27,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.h1}>Gregory N.J. Monroe</h1>
+        <p className={styles.koreanName}>고진수</p>
         
         <h2 className={styles.h2}>ABOUT</h2>
         {about.map((aboutP) => (
