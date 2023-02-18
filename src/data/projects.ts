@@ -46,6 +46,7 @@ const projects: project[] = [
       'Sanity',
       'Netlify',
       'SVG',
+      'GSAP',
     ],
   },
   {
