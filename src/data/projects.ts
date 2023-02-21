@@ -122,7 +122,15 @@ const projects: project[] = [
     githubChipUrl: 'https://github.com/gnjmonroe/praud-amplifier',
     description:
       "A progressive web app that illustrates the customization potential of the client's submission to LG Space X's Home as a Service exhibition.",
-    keywords: ['React', 'TypeScript', 'Design', 'PWA', 'SCSS', 'Netlify'],
+    keywords: [
+      'React',
+      'TypeScript',
+      'Design',
+      'PWA',
+      'SCSS',
+      'Netlify',
+      'Vite',
+    ],
   },
   {
     title: 'jinsoo.co',
