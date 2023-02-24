@@ -4,17 +4,8 @@ import about from "../data/about"
 import projects from "../data/projects"
 import contacts from '../data/contacts'
 import handleDate from '../utils/handleDate'
-import styles from '../styles/Home.module.scss'
 
-const UnderConstructionTag = () => (
-  <a 
-    className={styles.underConstructionTag} 
-    href="https://papago.naver.com/?sk=ko&tk=en&st=%EA%B3%B5%EC%82%AC%EC%A4%91" 
-    target="_blank" 
-    rel="noreferrer">
-    <em>&#60;공사 중&#62;</em>
-  </a>
-)
+import styles from '../styles/Home.module.scss'
 
 export default function Home() {
   return (
@@ -40,7 +31,6 @@ export default function Home() {
         ))}
 
         <h2 className={styles.h2}>PROJECTS</h2>
-        <UnderConstructionTag />
         {projects.sort((a, b) => {
           if (a.date > b.date) return -1;
           if (a.date < b.date) return 1;

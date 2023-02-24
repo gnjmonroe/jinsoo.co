@@ -5,7 +5,7 @@ export default function Document() {
     <Html lang="en">
       <Head>
         <meta charSet="UTF-8" />
-        <meta name="description" content="I'm a freelance UI/UX designer and web developer based in Seoul, primarily working on architecture-related projects." />
+        <meta name="description" content="I am a freelance frontend designer/developer based in Seoul." />
         
         <link rel="icon" href="/favicon.ico" />
         <link rel="stylesheet" as="style" crossOrigin="" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/variable/pretendardvariable-dynamic-subset.css" />
