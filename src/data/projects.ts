@@ -1,5 +1,6 @@
-type project = {
+export type Project = {
   title: string;
+  slug: string;
   date: string; // YYYY-MM-DD
   link: string | null;
   deployStatus: "live" | "archived" | "ongoing";
@@ -8,9 +9,14 @@ type project = {
   keywords: string[];
 };
 
-const projects: project[] = [
+export type ResponseError = {
+  message: string;
+};
+
+const projects: Project[] = [
   {
     title: "Context/Content",
+    slug: "context-content",
     date: "2019-12-00",
     link: "https://contextcontent.vercel.app/",
     deployStatus: "archived",
@@ -21,6 +27,7 @@ const projects: project[] = [
   },
   {
     title: "someparts.parts",
+    slug: "some-parts",
     date: "2019-11-00",
     link: "https://someparts-parts.vercel.app/",
     deployStatus: "archived",
@@ -31,6 +38,7 @@ const projects: project[] = [
   },
   {
     title: "PRAUD Website Renewal",
+    slug: "praud-renewal",
     date: "2022-06-20",
     link: "https://praud.info/",
     deployStatus: "live",
@@ -51,6 +59,7 @@ const projects: project[] = [
   },
   {
     title: "Domansa Website Renewal",
+    slug: "domansa-renewal",
     date: "2022-10-30",
     link: "https://domansaseoul.org/",
     deployStatus: "live",
@@ -69,6 +78,7 @@ const projects: project[] = [
   },
   {
     title: "Platform C Website Renewal",
+    slug: "platform-c-renewal",
     date: "2023-01-20",
     link: "https://platformc.kr/",
     deployStatus: "live",
@@ -86,7 +96,8 @@ const projects: project[] = [
     ],
   },
   {
-    title: "[ongoing project]",
+    title: "BIPOC Design History Renewal",
+    slug: "bipoc-design-history-renewal",
     date: "ongoing",
     link: null, // link when launched?
     deployStatus: "ongoing",
@@ -106,6 +117,7 @@ const projects: project[] = [
   },
   {
     title: "와!",
+    slug: "wa",
     date: "2022-09-20",
     link: "https://github.com/gnjmonroe/wawawa",
     deployStatus: "archived",
@@ -116,6 +128,7 @@ const projects: project[] = [
   },
   {
     title: "PRAUD Amplifer",
+    slug: "praud-amplifier",
     date: "2022-11-31",
     link: "https://github.com/gnjmonroe/praud-amplifier",
     deployStatus: "archived",
@@ -134,6 +147,7 @@ const projects: project[] = [
   },
   {
     title: "jinsoo.co",
+    slug: "jinsoo-co",
     date: "ongoing",
     link: "https://jinsoo.co",
     deployStatus: "live",

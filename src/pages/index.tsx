@@ -1,11 +1,11 @@
 /* eslint-disable import/extensions */
 import Head from 'next/head'
-import about from "../data/about"
-import projects from "../data/projects"
-import contacts from '../data/contacts'
-import handleDate from '../utils/handleDate'
+import Header from '@/components/Header'
 
-import styles from '../styles/Home.module.scss'
+import projects from "@/data/projects"
+import handleDate from '@/utils/handleDate'
+
+import styles from './Home.module.scss'
 
 export default function Home() {
   return (
@@ -16,19 +16,8 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.h1}>Gregory N.J. Monroe</h1>
-        <p className={styles.koreanName}>고진수</p>
-        
-        <h2 className={styles.h2}>ABOUT</h2>
-        {about.map((aboutP) => (
-          <p 
-            key={aboutP.id}
-            className={styles.aboutText}
-          >
-            {aboutP.text}
-          </p>
-        ))}
+      <main>
+        <Header />
 
         <h2 className={styles.h2}>PROJECTS</h2>
         {projects.sort((a, b) => {
@@ -70,15 +59,6 @@ export default function Home() {
               ))}
             </div>
           </div>
-        ))}
-    
-        <h2 className={styles.h2}>CONTACT</h2>
-        {contacts.map((contact) => (
-          <a 
-            key={contact.text}
-            className={styles.contactItem}
-            href={`${contact.url}`}>{contact.text}
-          </a>
         ))}
       </main>
     </>
