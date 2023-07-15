@@ -34,6 +34,13 @@ module.exports = {
     "no-param-reassign": ["error", { props: false }],
     "import/no-unresolved": 0,
     "import/extensions": 0,
+    indent: ["error", 2],
+    "block-spacing": "error",
+    "padding-line-between-statements": [
+      "error",
+      { blankLine: "always", prev: "*", next: "return" },
+    ],
+    "react/jsx-max-props-per-line": [1, { maximum: { single: 2, multi: 1 } }],
     // "@next/next/no-html-link-for-pages": ["error", "/jinsoo.co/pages"]
   },
 };

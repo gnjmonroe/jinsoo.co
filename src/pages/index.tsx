@@ -23,6 +23,7 @@ export default function Home() {
         {projects.sort((a, b) => {
           if (a.date > b.date) return -1;
           if (a.date < b.date) return 1;
+
           return 0;
         }).map((project) => (
           <div 
