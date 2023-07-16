@@ -8,35 +8,35 @@ import contacts from '@/data/contacts';
 import styles from '@/pages/Home.module.scss';
 
 export default function About() {
-	return (
-		<>
-			<Head>
-				<title>Gregory N.J. Monroe</title>
+  return (
+    <>
+      <Head>
+        <title>Gregory N.J. Monroe</title>
 
-				<meta name='viewport' content='width=device-width, initial-scale=1' />
-			</Head>
+        <meta name='viewport' content='width=device-width, initial-scale=1' />
+      </Head>
 
-			<main>
-				<Header />
+      <main>
+        <Header />
 
-				<h2>ABOUT</h2>
-				{about.map((aboutP) => (
-					<p key={aboutP.id} className={styles.aboutText}>
-						{aboutP.text}
-					</p>
-				))}
+        <h2>ABOUT</h2>
+        {about.map((aboutP) => (
+          <p key={aboutP.id} className={styles.aboutText}>
+            {aboutP.text}
+          </p>
+        ))}
 
-				<h2 className={styles.h2}>CONTACT</h2>
-				{contacts.map((contact) => (
-					<a
-						key={contact.text}
-						className={styles.contactItem}
-						href={`${contact.url}`}
-					>
-						{contact.text}
-					</a>
-				))}
-			</main>
-		</>
-	);
+        <h2 className={styles.h2}>CONTACT</h2>
+        {contacts.map((contact) => (
+          <a
+            key={contact.text}
+            className={styles.contactItem}
+            href={`${contact.url}`}
+          >
+            {contact.text}
+          </a>
+        ))}
+      </main>
+    </>
+  );
 }
