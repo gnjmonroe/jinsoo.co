@@ -1,11 +1,11 @@
-import React from 'react'
+import React from 'react';
 
-import Head from 'next/head'
-import Header from '@/components/Header'
-import about from '@/data/about'
-import contacts from '@/data/contacts'
+import Head from 'next/head';
+import Header from '@/components/Header';
+import about from '@/data/about';
+import contacts from '@/data/contacts';
 
-import styles from '@/pages/Home.module.scss'
+import styles from '@/pages/Home.module.scss';
 
 export default function About() {
   return (
@@ -13,7 +13,7 @@ export default function About() {
       <Head>
         <title>Gregory N.J. Monroe</title>
 
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name='viewport' content='width=device-width, initial-scale=1' />
       </Head>
 
       <main>
@@ -21,23 +21,22 @@ export default function About() {
 
         <h2>ABOUT</h2>
         {about.map((aboutP) => (
-          <p 
-            key={aboutP.id}
-            className={styles.aboutText}
-          >
+          <p key={aboutP.id} className={styles.aboutText}>
             {aboutP.text}
           </p>
         ))}
 
         <h2 className={styles.h2}>CONTACT</h2>
         {contacts.map((contact) => (
-          <a 
+          <a
             key={contact.text}
             className={styles.contactItem}
-            href={`${contact.url}`}>{contact.text}
+            href={`${contact.url}`}
+          >
+            {contact.text}
           </a>
         ))}
       </main>
     </>
-  )
+  );
 }

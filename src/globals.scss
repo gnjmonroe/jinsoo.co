@@ -1,5 +1,5 @@
-@use "pages/Home.module.scss" as home;
-@use "sass:map";
+@use 'pages/Home.module.scss' as home;
+@use 'sass:map';
 
 :root {
   --max-width: 1100px;
@@ -8,7 +8,7 @@
 
 * {
   color: #333;
-  font-family: "Pretendard Variable", sans-serif;
+  font-family: 'Pretendard Variable', sans-serif;
   font-weight: 500;
 
   margin: 0;
@@ -40,7 +40,7 @@ h1 {
 
 h2 {
   margin: 3rem 0 0.75rem;
-  font-size: map.get(home.$font-sizes, "detail");
+  font-size: map.get(home.$font-sizes, 'detail');
 
   width: 100%;
 
