@@ -1,6 +1,17 @@
+@use '../pages/Home.module.scss' as home;
+@use 'sass:map';
+
 .header {
   display: flex;
   justify-content: space-between;
+}
+
+.h1 {
+  font-size: map.get(home.$font-sizes, 'base+6');
+}
+
+.koreanName {
+  font-size: map.get(home.$font-sizes, 'base');
 }
 
 .infoLink {
