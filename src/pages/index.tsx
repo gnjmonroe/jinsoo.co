@@ -5,7 +5,7 @@ import Header from '@/components/Header';
 import projects from '@/data/projects';
 import handleDate from '@/utils/handleDate';
 
-import styles from './Home.module.scss';
+import * as styles from './index.css';
 
 export default function Home() {
   return (
@@ -18,7 +18,7 @@ export default function Home() {
 
       <main>
         <Header />
-        <h2 className={styles.h2}>PROJECTS</h2>
+        <h2>PROJECTS</h2>
         {projects
           .sort((a, b) => {
             if (a.date > b.date) return -1;
