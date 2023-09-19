@@ -5,7 +5,7 @@ import Header from '@/components/Header';
 import projects from '@/data/projects';
 import handleDate from '@/utils/handleDate';
 
-import * as styles from './index.css';
+import * as styles from '../styles/index.css';
 
 export default function Home() {
   return (

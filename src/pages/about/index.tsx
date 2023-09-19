@@ -5,7 +5,7 @@ import Header from '@/components/Header';
 import about from '@/data/about';
 import contacts from '@/data/contacts';
 
-import * as styles from '../index.css';
+import * as styles from '../../styles/index.css';
 
 export default function About() {
   return (

@@ -1,5 +1,5 @@
 import { style } from '@vanilla-extract/css';
-import { fontSizes } from '@/globals.css';
+import { fontSizes } from '@/styles/globals.css';
 
 export const header = style({
   display: 'flex',
