@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 
-import styles from './Header.module.scss';
+import * as styles from '../styles/Header.css';
 
 export default function Header() {
   return (

@@ -5,7 +5,7 @@ import Header from '@/components/Header';
 import about from '@/data/about';
 import contacts from '@/data/contacts';
 
-import styles from '@/pages/Home.module.scss';
+import * as styles from '../../styles/index.css';
 
 export default function About() {
   return (
@@ -26,7 +26,7 @@ export default function About() {
           </p>
         ))}
 
-        <h2 className={styles.h2}>CONTACT</h2>
+        <h2>CONTACT</h2>
         {contacts.map((contact) => (
           <a
             key={contact.text}
