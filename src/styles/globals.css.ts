@@ -1,4 +1,5 @@
 import { globalStyle, globalFontFace } from '@vanilla-extract/css';
+import { gray } from '@radix-ui/colors';
 
 const pretendardVariable = 'Pretendard Variable';
 
@@ -20,7 +21,7 @@ export const fontSizes = {
 };
 
 globalStyle('*', {
-  color: '#333',
+  color: gray.gray12,
   fontFamily: `${pretendardVariable}, 'sans-serif'`,
   fontWeight: 500,
 
@@ -34,9 +35,11 @@ globalStyle('html, body', {
   overflowX: 'hidden',
 });
 
-globalStyle('main', {
-  background: 'white',
+globalStyle('body', {
+  background: gray.gray1,
+});
 
+globalStyle('main', {
   width: '100%',
   maxWidth: '65ch',
   height: '100%',
@@ -54,7 +57,7 @@ globalStyle('h2', {
 
   width: '100%',
   margin: '3rem 0 0.75rem',
-  borderTop: '1px solid black',
+  borderTop: `1px solid ${gray.gray12}`,
   paddingTop: 4,
 });
 

@@ -1,5 +1,6 @@
 import { style } from '@vanilla-extract/css';
 import { fontSizes } from '@/styles/globals.css';
+import { gray } from '@radix-ui/colors';
 
 export const header = style({
   display: 'flex',
@@ -15,5 +16,13 @@ export const koreanName = style({
 });
 
 export const infoLink = style({
+  color: gray.gray12,
+
+  fontWeight: 500,
+
   marginTop: 4,
+
+  ':hover': {
+    textDecoration: 'underline',
+  },
 });
