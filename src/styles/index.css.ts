@@ -1,15 +1,12 @@
 import { style } from '@vanilla-extract/css';
 import { fontSizes } from '@/styles/globals.css';
+import { gray } from '@radix-ui/colors';
 
 const chipRadius = 6;
 
 const linkBase = style({
   ':hover': {
     textDecoration: 'underline',
-  },
-
-  ':visited': {
-    color: 'rgb(204, 0, 0)',
   },
 });
 
@@ -63,7 +60,7 @@ export const title = style([
       textDecoration: 'underline',
     },
     ':visited': {
-      color: '#333',
+      color: gray.gray12,
     },
 
     selectors: {
@@ -77,14 +74,20 @@ export const title = style([
 
 export const githubChip = style([
   {
-    background: '#333',
+    background: gray.gray9,
     color: 'white',
 
     fontSize: fontSizes['base-2'],
     fontWeight: 500,
+    textDecoration: 'none',
 
     borderRadius: chipRadius,
     padding: '4px 8px',
+
+    ':hover': {
+      background: gray.gray10,
+      textDecoration: 'none',
+    },
   },
   linkBase,
 ]);
@@ -104,12 +107,13 @@ export const keywords = style({
 });
 
 export const keyword = style({
+  color: gray.gray11,
+
   fontSize: fontSizes['base-2'],
   fontWeight: 400,
 
   width: 'fit-content',
-
-  border: '1px solid #333',
+  border: `1px solid ${gray.gray6}`,
   borderRadius: chipRadius,
   padding: '4px 8px',
 });
