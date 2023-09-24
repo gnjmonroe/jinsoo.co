@@ -11,9 +11,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Gregory N.J. Monroe</title>
-
-        <meta name='viewport' content='width=device-width, initial-scale=1' />
+        <title>Gregory Nathan Jinsoo Monroe</title>
       </Head>
 
       <main>
