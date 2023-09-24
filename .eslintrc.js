@@ -47,6 +47,10 @@ module.exports = {
       { blankLine: 'always', prev: '*', next: 'return' },
     ],
     'react/jsx-max-props-per-line': [1, { maximum: { single: 2, multi: 1 } }],
+    'react/function-component-definition': [
+      2,
+      { namedComponents: 'arrow-function' },
+    ],
     // "@next/next/no-html-link-for-pages": ["error", "/jinsoo.co/pages"]
   },
 };
