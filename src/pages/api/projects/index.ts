@@ -1,5 +1,5 @@
-import { NextApiResponse, NextApiRequest } from "next";
-import projects, { Project } from "@/data/projects";
+import { NextApiResponse, NextApiRequest } from 'next';
+import projects, { Project } from '@/data/projects';
 
 export default function handler(
   _req: NextApiRequest,

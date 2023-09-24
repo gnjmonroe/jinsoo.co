@@ -1,67 +1,64 @@
-/* eslint-disable import/extensions */
-import Head from 'next/head'
-import Header from '@/components/Header'
+import React, { FC } from 'react';
+import Head from 'next/head';
 
-import projects from "@/data/projects"
-import handleDate from '@/utils/handleDate'
+import * as styles from '../styles/index.css';
 
-import styles from './Home.module.scss'
-
-export default function Home() {
-  return (
-    <>
-      <Head>
-        <title>Gregory N.J. Monroe</title>
-
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-      </Head>
-
-      <main>
-        <Header />
-
-        <h2 className={styles.h2}>PROJECTS</h2>
-        {projects.sort((a, b) => {
-          if (a.date > b.date) return -1;
-          if (a.date < b.date) return 1;
-
-          return 0;
-        }).map((project) => (
-          <div 
-            key={project.title}
-            className={styles.projectItem}
-          >
-            <p className={styles.date}>
-              {project.date === 'ongoing' ? '진행 중' : handleDate(project.date)}
-            </p>
-            <div className={styles.titleGithubBar}>
-              {project.link ? (
-                <a 
-                  href={project.link}
-                  className={styles.title}
-                >{project.title}</a>
-              ) : (
-                <p className={styles.title}>{project.title}</p>
-              )}
-              {project.githubChipUrl ? (
-                <a 
-                  href={project.githubChipUrl}
-                  className={styles.githubChip}
-                >GitHub 🔗</a>
-              ) : null}
-            </div>
-            {project.description ? 
-              <p className={styles.description}>{project.description}</p> : null}
-            <div className={styles.keywords}>
-              {project.keywords.sort().map(keyword => (
-                <p
-                  key={keyword}
-                  className={styles.keyword}
-                >{keyword}</p>
-              ))}
-            </div>
-          </div>
-        ))}
-      </main>
-    </>
-  )
+interface ContactProps {
+  title: string;
+  url: string;
 }
+
+const Contact: FC<ContactProps> = ({ title, url }) => (
+  <a className={styles.contact} href={url}>
+    {title}
+  </a>
+);
+
+export const Home = () => (
+  <>
+    <Head>
+      <title>Gregory Nathan Jinsoo Monroe</title>
+      <meta name='viewport' content='width=device-width, initial-scale=1' />
+    </Head>
+
+    <main className={styles.main}>
+      <header>
+        <h1 className={styles.mainName}>Gregory Nathan Jinsoo Monroe</h1>
+        <span className={styles.subName}>고진수</span>
+      </header>
+      <div className={styles.content}>
+        <section className={styles.about}>
+          <p className={styles.aboutP}>
+            I am a frontend engineer based in Seoul.
+          </p>
+          <p className={styles.aboutP}>
+            I started out by designing and developing websites for architects,
+            applying aesthetic motifs from architecture and urban environments
+            to UI/UX design for the web, particularly focusing on navigation and
+            information architecture.
+          </p>
+          <p className={styles.aboutP}>
+            Previously, I worked as an in-house graphic designer and web
+            developer at a local architecture firm. Before that, I was a product
+            engineer in the automotive industry, shepherding the 2018 Ford Edge
+            center console, in its 118+ permutations, to production.
+          </p>
+          <p className={styles.aboutP}>
+            I have studied Urban Design, Urban Planning, and Materials Science
+            and Engineering at the University of Michigan.
+          </p>
+        </section>
+        <section className={styles.contacts}>
+          <Contact title='GitHub' url='https://github.com/gnjmonroe' />
+          <Contact
+            title='LinkedIn'
+            url='https://www.linkedin.com/in/gnjmonroe/'
+          />
+          <Contact title='Email' url='gnjmonroe@gmail.com' />
+        </section>
+      </div>
+    </main>
+  </>
+);
+
+export default Home;
