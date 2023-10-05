@@ -32,10 +32,10 @@ export const Home = () => (
             I am a frontend engineer based in Seoul.
           </p>
           <p className={styles.aboutP}>
-            I started out by designing and developing websites for architects,
-            applying aesthetic motifs from architecture and urban environments
-            to UI/UX design for the web, particularly focusing on navigation and
-            information architecture.
+            In my personal practice, I primarily design and develop websites for
+            architects, applying aesthetic motifs from architecture and urban
+            environments to UI/UX design for the web, particularly focusing on
+            navigation and information architecture.
           </p>
           <p className={styles.aboutP}>
             Previously, I worked as an in-house graphic designer and web
