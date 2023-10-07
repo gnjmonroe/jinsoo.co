@@ -13,7 +13,7 @@ const Contact: FC<ContactProps> = ({ title, url }) => (
   </a>
 );
 
-export const Index = () => (
+export const Home = () => (
   <main className={styles.main}>
     <header>
       <h1 className={styles.mainName}>Gregory Nathan Jinsoo Monroe</h1>
@@ -53,4 +53,4 @@ export const Index = () => (
   </main>
 );
 
-export default Index;
+export default Home;
