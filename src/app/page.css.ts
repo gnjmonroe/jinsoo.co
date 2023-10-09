@@ -1,6 +1,8 @@
 import { style } from '@vanilla-extract/css';
 import { gray, red } from '@radix-ui/colors';
 
+// clamps are set to min: 320px, max: 723px
+
 export const main = style({
   display: 'flex',
   flexDirection: 'column',
@@ -19,7 +21,7 @@ export const header = style({
   maxWidth: 659,
 });
 export const mainName = style({
-  fontSize: 'clamp(1.125rem, 0.976rem + 0.744vw, 1.313rem)',
+  fontSize: 'clamp(1.125rem, 0.976rem + 0.746vw, 1.313rem)',
 });
 export const subName = style({
   color: gray.gray11,
@@ -42,7 +44,50 @@ export const about = style({
 });
 export const aboutP = style({
   fontWeight: 400,
-  fontSize: 'clamp(1.125rem, 0.976rem + 0.744vw, 1.313rem)',
+  fontSize: 'clamp(1.125rem, 0.976rem + 0.746vw, 1.313rem)',
+});
+
+export const projects = style({
+  display: 'flex',
+  flexDirection: 'column',
+  gap: 12,
+});
+export const project = style({
+  display: 'flex',
+  flexDirection: 'column',
+  gap: 2,
+
+  textDecoration: 'none',
+});
+export const projectHeader = style({
+  display: 'flex',
+  justifyContent: 'space-between',
+  alignItems: 'start',
+});
+export const projectName = style({
+  fontSize: 'clamp(1.125rem, 0.976rem + 0.746vw, 1.313rem)',
+
+  selectors: {
+    '&::before': {
+      content: '↗ ',
+      verticalAlign: 'text-top',
+      fontSize: 12,
+    },
+    [`${project}:hover &`]: {
+      textDecoration: 'underline',
+    },
+  },
+});
+export const projectYear = style({
+  color: gray.gray11,
+
+  fontSize: 'clamp(.625rem, 0.426rem + .993vw, .875rem)',
+  fontWeight: 400,
+});
+export const projectDescription = style({
+  color: gray.gray11,
+  fontSize: 'clamp(.688rem, 0.54rem + .742vw, .875rem)',
+  fontWeight: 400,
 });
 
 export const contacts = style({
@@ -54,7 +99,7 @@ export const contacts = style({
 });
 export const contact = style({
   textDecoration: 'none',
-  fontSize: 'clamp(1.125rem, 0.976rem + 0.744vw, 1.313rem)',
+  fontSize: 'clamp(1.125rem, 0.976rem + 0.746vw, 1.313rem)',
 
   ':hover': {
     textDecoration: 'underline',
