@@ -78,23 +78,15 @@ const Index = () => (
       </section>
       <section className={styles.about}>
         <p className={styles.aboutP}>
-          I am a frontend engineer based in Seoul.
+          I am currently a frontend engineer based in Seoul. Previously, I
+          worked as an in-house graphic designer and web developer at a local
+          architecture firm.
         </p>
         <p className={styles.aboutP}>
           In my personal practice, I primarily design and develop websites for
           architects, applying aesthetic motifs from architecture and urban
           environments to UI/UX design for the web, particularly focusing on
           navigation and information architecture.
-        </p>
-        <p className={styles.aboutP}>
-          Previously, I worked as an in-house graphic designer and web developer
-          at a local architecture firm. Before that, I was a product engineer in
-          the automotive industry, shepherding the 2018 Ford Edge center
-          console, in its 118+ permutations, to production.
-        </p>
-        <p className={styles.aboutP}>
-          I have studied Urban Design, Urban Planning, and Materials Science and
-          Engineering at the University of Michigan.
         </p>
       </section>
       <section className={styles.contacts}>

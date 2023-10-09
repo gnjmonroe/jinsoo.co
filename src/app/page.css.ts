@@ -45,6 +45,8 @@ export const about = style({
 export const aboutP = style({
   fontWeight: 400,
   fontSize: 'clamp(1.125rem, 0.976rem + 0.746vw, 1.313rem)',
+
+  maxWidth: '50ch',
 });
 
 export const projects = style({
@@ -88,6 +90,8 @@ export const projectDescription = style({
   color: gray.gray11,
   fontSize: 'clamp(.688rem, 0.54rem + .742vw, .875rem)',
   fontWeight: 400,
+
+  maxWidth: '66ch',
 });
 
 export const contacts = style({
