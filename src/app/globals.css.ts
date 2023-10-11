@@ -10,7 +10,7 @@ globalFontFace(pretendardVariable, {
 globalStyle('*', {
   color: gray.gray12,
 
-  fontFamily: `${pretendardVariable}, 'sans-serif'`,
+  fontFamily: `${pretendardVariable}, sans-serif`,
   fontWeight: 500,
   lineHeight: 1.4,
 
