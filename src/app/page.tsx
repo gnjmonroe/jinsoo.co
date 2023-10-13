@@ -26,7 +26,10 @@ const Project: FC<ProjectProps> = ({ name, url, year, description }) => (
 );
 
 const Contact: FC<ContactProps> = ({ title, url }) => (
-  <a className={styles.contact} href={url}>
+  <a
+    className={styles.contact}
+    href={title === 'Email' ? `mailto:${url}` : url}
+  >
     {title}
   </a>
 );
