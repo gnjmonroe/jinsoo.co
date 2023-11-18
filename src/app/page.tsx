@@ -80,17 +80,9 @@ const Index = () => (
         />
       </section>
       <section className={styles.about}>
-        <p className={styles.aboutP}>
-          I am currently a frontend engineer based in Seoul. Previously, I
-          worked as an in-house graphic designer and web developer at a local
-          architecture firm.
-        </p>
-        <p className={styles.aboutP}>
-          In my personal practice, I primarily design and develop websites for
-          architects, applying aesthetic motifs from architecture and urban
-          environments to UI/UX design for the web, particularly focusing on
-          navigation and information architecture.
-        </p>
+        <p className={styles.aboutP}>Gregory Monroe is a frontend engineer and UI/UX designer based in Seoul, primarily working in the fields of architecture and graphic design. He has worked for design offices in Los Angeles, Boston, and Seoul and graduated from the University of Michigan with degrees in Urban Design, Urban Planning, and Materials Science and Engineering.</p>
+        <p className={styles.aboutP}>In his design work, he focuses on navigation and information architecture, often applying aesthetic and conceptual motifs from architecture and urban environments. In his development work, he focuses on responsive design, immutability, automated testing systems, and infrastructure.</p>
+        <p className={styles.aboutP}>Past clients and partners include: EPFL Architecture, Gowaseo, Hyperspandrel, Chris Hamamoto, Federico Perez Villoro, PRAUD, Domansa, and stock a studio.</p>
       </section>
       <section className={styles.contacts}>
         <Contact title='GitHub' url='https://github.com/gnjmonroe' />
