@@ -18,17 +18,24 @@ const Index: FC = () => (
             url={project.url}
             year={project.year}
             description={project.description}
+            key={project.name}
           />
         ))}
       </section>
       <section className={styles.about}>
         {bio.map((paragraph) => (
-          <p className={styles.aboutP}>{paragraph}</p>
+          <p className={styles.aboutP} key={paragraph}>
+            {paragraph}
+          </p>
         ))}
       </section>
       <section className={styles.contacts}>
         {contacts.map((contact) => (
-          <Contact title={contact.title} url={contact.url} />
+          <Contact
+            title={contact.title}
+            url={contact.url}
+            key={contact.title}
+          />
         ))}
       </section>
     </div>

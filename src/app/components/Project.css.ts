@@ -12,7 +12,7 @@ export const root = style({
 export const header = style({
   display: 'flex',
   justifyContent: 'space-between',
-  alignItems: 'start',
+  alignItems: 'flex-start',
 });
 
 export const name = style({
