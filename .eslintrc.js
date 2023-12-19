@@ -51,6 +51,6 @@ module.exports = {
       2,
       { namedComponents: 'arrow-function' },
     ],
-    // "@next/next/no-html-link-for-pages": ["error", "/jinsoo.co/pages"]
+    '@next/next/no-html-link-for-pages': 0,
   },
 };
