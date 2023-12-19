@@ -2,16 +2,17 @@ import { style } from '@vanilla-extract/css';
 
 export const root = style({
   backgroundColor: '#333',
+
   display: 'grid',
   placeContent: 'center',
   overflow: 'hidden',
 
-  height: '100vh',
+  height: ['100dvh', '100vh'],
 });
 
 const typography = style({
   textAlign: 'right',
-  whiteSpace: 'pre-line',
+  whiteSpace: 'pre',
   lineHeight: 1.1,
   fontSize: 'min(3.175vw, 3rem)',
   fontWeight: 600,

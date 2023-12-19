@@ -19,8 +19,12 @@ const Index = () => {
     const mirroredTop = rootRef.current.clientHeight - e.clientY;
     const mirroredLeft = rootRef.current.clientWidth - e.clientX;
 
-    refractionRef.current.style.top = `${mirroredTop}px`;
-    refractionRef.current.style.left = `${mirroredLeft}px`;
+    refractionRef.current.style.top = `${
+      mirroredTop - refractionRef.current.clientHeight / 2
+    }px`;
+    refractionRef.current.style.left = `${
+      mirroredLeft - refractionRef.current.clientWidth / 2
+    }px`;
   };
 
   return (
