@@ -4,6 +4,7 @@ export const root = style({
   backgroundColor: '#333',
   display: 'grid',
   placeContent: 'center',
+  overflow: 'hidden',
 
   height: '100vh',
 });
@@ -12,7 +13,7 @@ const typography = style({
   textAlign: 'right',
   whiteSpace: 'pre-line',
   lineHeight: 1.1,
-  fontSize: '3rem',
+  fontSize: 'min(3.175vw, 3rem)',
   fontWeight: 600,
   transform: 'scale(-1, 1)',
 });
