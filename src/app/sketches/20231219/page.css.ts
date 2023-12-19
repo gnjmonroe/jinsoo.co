@@ -25,6 +25,7 @@ export const refraction = style([
   typography,
   {
     color: '#59f1ff',
+    opacity: 0.7,
 
     userSelect: 'none',
 

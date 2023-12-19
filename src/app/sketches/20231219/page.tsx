@@ -2,11 +2,17 @@
 
 import React, { useRef } from 'react';
 import * as styles from './page.css';
+/*
+ * notes:
+ * - dvh support doesn't seem to work
+ * - refraction quality is too flat/dull, blend modes might be the solution
+ * - transition is set to linear but feels to stiff, easing might help, but the solution probably involves delays
+ * */
 
 const defaultText = `
-    ✈️ Gates A1 to A72
-    ✈️ Concourses B and C
-    🅿️🚍🚖🧳💁 Terminal
+    Gates A1 to A72
+    Concourses B and C
+    Terminal
 `;
 
 const Index = () => {
