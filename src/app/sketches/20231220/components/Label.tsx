@@ -19,12 +19,12 @@ export const Label: FC<{ line: LineProps }> = ({ line }) => {
   const midPointX = Math.abs(x2 - x1) / 2 + Math.min(x1, x2);
   const midPointY = Math.abs(y2 - y1) / 2 + Math.min(y1, y2);
   const hypotenuse = length;
-  const rotationSign =
-    Math.sign((x2 - x1) * (y2 - y1)) > 0
-      ? 1
-      : Math.sign((x2 - x1) * (y2 - y1)) < 0
-        ? -1
-        : 0;
+  const rotationSign = (() => {
+    if (Math.sign((x2 - x1) * (y2 - y1)) > 0) return 1;
+    if (Math.sign((x2 - x1) * (y2 - y1)) < 0) return -1;
+
+    return 0;
+  })();
   const rotationMagnitude = Math.asin(Math.abs(y2 - y1) / hypotenuse);
   const rotationValue = rotationMagnitude * (180 / Math.PI) * rotationSign;
 
