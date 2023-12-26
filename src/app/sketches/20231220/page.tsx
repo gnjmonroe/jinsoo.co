@@ -20,7 +20,7 @@ const getLineLength = (
 
 const Index = () => {
   const rootRef = useRef<HTMLDivElement | null>(null);
-  const [points, setPoints] = useState<PointType[]>([]);
+  const [points, setPoints] = useState<PointProps[]>([]);
   const [lines, setLines] = useState<LineProps[]>([]);
 
   const getRandomCoords = () => {
