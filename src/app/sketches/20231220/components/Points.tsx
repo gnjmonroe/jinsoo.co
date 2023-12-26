@@ -1,6 +1,6 @@
 import React, { FC, SVGProps } from 'react';
 
-export interface PointType extends SVGProps<SVGSVGElement> {
+export interface PointProps extends SVGProps<SVGSVGElement> {
   coords: number[];
   center: number[];
   color: string;
@@ -9,7 +9,7 @@ export interface PointType extends SVGProps<SVGSVGElement> {
 }
 
 interface PointsProps extends SVGProps<SVGSVGElement> {
-  pointsData: PointType[] | undefined;
+  pointsData: PointProps[] | undefined;
   radiusValue: number;
 }
 

@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState, useRef, useEffect } from 'react';
-import { Points, Lines, LineProps, PointType } from './components';
+import { Points, Lines, type LineProps, type PointProps } from './components';
 import * as styles from './page.css';
 
 const pointRadius = 22;
@@ -9,8 +9,8 @@ const pointDiameter = pointRadius * 2;
 const pointColors = ['#C1F0FF', '#FFD6E5', '#D7FFBE', '#FFFF9A'];
 
 const getLineLength = (
-  point1: PointType['coords'],
-  point2: PointType['coords']
+  point1: PointProps['coords'],
+  point2: PointProps['coords']
 ) => {
   const [x1, y1] = point1;
   const [x2, y2] = point2;
@@ -103,6 +103,3 @@ const Index = () => {
 };
 
 export default Index;
-
-// health insurance customer support person: 김현아
-// ended call around 1:33pm
