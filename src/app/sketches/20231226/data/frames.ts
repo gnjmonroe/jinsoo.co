@@ -9,17 +9,17 @@ export class FrameInstance {
   blockIndex: number;
 
   backgroundShapes: {
-    scale: number;
+    scale: string;
     color: ColorsValues;
-    position: [number, number];
+    position: string[];
     rotation: string;
   }[];
 
   glassblockEffect: {
-    blurRadius: number;
+    blurRadius: string;
     distortion: {
-      bulkStrength: number;
-      edgeStrength: number;
+      bulkStrength: string;
+      edgeStrength: string;
       edgeRadius: number;
     };
   };
@@ -30,10 +30,10 @@ export class FrameInstance {
 
   constructor() {
     this.showLog = !!Math.round(Math.random());
-    this.blockIndex = FrameInstance.count++;
+    this.blockIndex = FrameInstance.count;
     this.backgroundShapes = generateBackgroundShapes();
     this.glassblockEffect = {
-      blurRadius: Math.random(),
+      blurRadius: Math.random().toFixed(6),
       distortion: {
         bulkStrength: Math.random().toFixed(6),
         edgeStrength: Math.random().toFixed(6),
@@ -41,6 +41,8 @@ export class FrameInstance {
       },
     };
     this.blockRotation = `${getRandomInt(4) / 4}turn`;
+
+    FrameInstance.count += 1;
   }
 }
 

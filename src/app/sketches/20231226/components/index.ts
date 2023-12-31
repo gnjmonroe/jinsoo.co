@@ -1,2 +1,5 @@
+import { Glassblock } from './Glassblock';
+
 export { Glassblock } from './Glassblock';
-export { DataSpan } from './DataSpan';
+
+export default Glassblock;

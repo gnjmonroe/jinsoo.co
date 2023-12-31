@@ -5,7 +5,7 @@ import React, { useEffect, type FC } from 'react';
 import { frames } from './data';
 import * as styles from './page.css';
 
-const NoSsrGlassblock = dynamic(() => import('./components/Glassblock.tsx'), {
+const NoSsrGlassblock = dynamic(() => import('./components/Glassblock'), {
   ssr: false,
 });
 
