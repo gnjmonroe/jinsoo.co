@@ -5,16 +5,13 @@ type ColorsValues = (typeof colors)[keyof typeof colors];
 
 export class FrameInstance {
   showLog: boolean;
-
   blockIndex: number;
-
   backgroundShapes: {
     scale: string;
     color: ColorsValues;
     position: string[];
     rotation: string;
   }[];
-
   glassblockEffect: {
     blurRadius: string;
     distortion: {
@@ -23,7 +20,6 @@ export class FrameInstance {
       edgeRadius: number;
     };
   };
-
   blockRotation: string;
 
   static count = 0;

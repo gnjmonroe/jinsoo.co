@@ -21,5 +21,3 @@ export const root = style({
     },
   },
 });
-
-export default root;
