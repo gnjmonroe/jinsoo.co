@@ -17,5 +17,3 @@ export const generateBackgroundShapes = () => {
 
   return backgroundShapes;
 };
-
-export default generateBackgroundShapes;

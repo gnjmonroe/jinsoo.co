@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const RootLayout = ({ children }: { children: React.ReactNode }) => (
+const RootLayout = ({ children }: { children: React.ReactNode }) => (
   <html lang='en'>
     <head>
       <link
