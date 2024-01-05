@@ -1,12 +1,8 @@
 'use client';
 
-import React, { type FC, useState, useRef } from 'react';
+import React, { type FC, useState, useRef, useEffect } from 'react';
 import * as styles from './page.css';
 
-const frame = {
-  width: window.innerWidth,
-  height: window.innerHeight,
-};
 const rings = {
   server: {
     radiusFactor: 0.15,
@@ -71,6 +67,18 @@ const Index: FC = () => {
       value: undefined,
     },
   });
+
+  const [frame, setFrame] = useState({
+    width: 0,
+    height: 0,
+  });
+
+  useEffect(() => {
+    setFrame({
+      width: window.innerWidth,
+      height: window.innerHeight,
+    });
+  }, []);
 
   const handleClickButton = async (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
@@ -303,6 +311,16 @@ const Index: FC = () => {
             if (!value || value.value === 'loading') return undefined;
             if (!value.points) return undefined;
 
+            const timeDiff = () => {
+              if (!i) return '(+0ms)';
+
+              const prevValue = arr[i - 1][1].value;
+              if (typeof value.value !== 'number') return undefined;
+              if (typeof prevValue !== 'number') return undefined;
+
+              return `(+${value.value - prevValue}ms)`;
+            };
+
             return (
               <foreignObject
                 x={value.points.x + 20}
@@ -318,11 +336,7 @@ const Index: FC = () => {
                   <span
                     className={styles.foSpan}
                   >{`${value.value}@${value.location}`}</span>
-                  <span className={styles.foSpan}>
-                    {i
-                      ? `(+${arr[i][1].value - arr[i - 1][1].value}ms)`
-                      : `(+0ms)`}
-                  </span>
+                  <span className={styles.foSpan}>{timeDiff()}</span>
                 </div>
               </foreignObject>
             );
