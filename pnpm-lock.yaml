@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@radix-ui/colors':
-        specifier: 3.0.0-rc.4
-        version: 3.0.0-rc.4
+        specifier: 3.0.0
+        version: 3.0.0
       '@vanilla-extract/css':
         specifier: 1.14.0
         version: 1.14.0
@@ -1161,8 +1161,8 @@ packages:
       tslib: 2.6.0
     dev: true
 
-  /@radix-ui/colors@3.0.0-rc.4:
-    resolution: {integrity: sha512-dUG9WQCdjKPiiqbQsahUGmOuC+9kCltckQtej7hkVIQp56xirLaMsNrOs9xMYXnIbNqK/vZCmoEk+q1Nda+2AA==}
+  /@radix-ui/colors@3.0.0:
+    resolution: {integrity: sha512-FUOsGBkHrYJwCSEtWRCIfQbZG7q1e6DgxCIOe1SUQzDe/7rXXeA47s8yCn6fuTNQAj1Zq4oTFi9Yjp3wzElcxg==}
     dev: false
 
   /@rollup/rollup-android-arm-eabi@4.9.3:
