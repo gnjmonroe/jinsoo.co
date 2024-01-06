@@ -1,9 +1,11 @@
+type Title = 'GitHub' | 'LinkedIn' | 'Email';
+
 export class Contact {
-  title: string;
+  title: Title;
 
   url: string;
 
-  constructor(title: string, url: string) {
+  constructor(title: Title, url: string) {
     this.title = title;
     this.url = url;
   }
