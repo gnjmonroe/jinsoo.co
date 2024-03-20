@@ -1,4 +1,5 @@
 type ProjectName =
+  | 'EPFL Blue City'
   | 'unseen.garden'
   | 'Platform C'
   | 'Domansa'
@@ -30,10 +31,16 @@ export class Project {
 
 export const projects: Project[] = [
   new Project(
+    'EPFL Blue City',
+    'https://www.bluecity.store',
+    2023,
+    "Responsive design and frontend development for EPFL's Blue City Project: a transdisciplinary project aiming to model and simulate a city’s multi-layered, interconnected network of flows.",
+  ),
+  new Project(
     'unseen.garden',
     'https://www.unseen.garden/',
     2023,
-    'AI development for a video captioning model in PyTorch 2. Used 83,000 annotated images from the MS COCO dataset and AWS (p3.2xlarge) to train the model.',
+    'AI development for a video captioning model in PyTorch 2. Used 83,000 annotated images from the MS COCO dataset and AWS (p3 instance) to train the model.',
   ),
   new Project(
     'Platform C',
