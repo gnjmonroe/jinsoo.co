@@ -2,7 +2,8 @@ import React from 'react';
 import { getDirectories } from './utils';
 
 const sketchesPath = `./src/app/sketches`;
-const dateFilenames = await getDirectories(sketchesPath);
+const dirs = await getDirectories(sketchesPath);
+const dateFilenames = dirs.filter((dirname) => dirname !== 'utils');
 
 const Sketches = () => (
   <main>
