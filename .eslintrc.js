@@ -47,6 +47,7 @@ module.exports = {
       { blankLine: 'always', prev: '*', next: 'return' },
     ],
     'react/prop-types': 0,
+    'react/require-default-props': 0,
     'react/jsx-max-props-per-line': [1, { maximum: { single: 2, multi: 1 } }],
     'react/function-component-definition': [
       2,
