@@ -1,0 +1,30 @@
+.notes {
+  width: 70ch;
+  min-height: 100vh;
+  padding: clamp(1.125rem, -0.066rem + 5.955vw, 2.625rem)
+    clamp(1rem, 0.206rem + 3.97vw, 2rem);
+
+  * + * {
+    margin-bottom: 1rem;
+  }
+
+  header {
+    margin-bottom: 4.5rem;
+    & > h1 {
+      margin-bottom: unset;
+    }
+  }
+
+  & > h1 {
+    font-size: 1.625rem;
+    width: 100%;
+    margin-bottom: 1.75rem;
+  }
+
+  p {
+    color: #222;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.3;
+  }
+}

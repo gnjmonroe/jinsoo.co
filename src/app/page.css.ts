@@ -17,11 +17,23 @@ export const main = style({
     'clamp(1.125rem, -0.066rem + 5.955vw, 2.625rem) clamp(1rem, 0.206rem + 3.97vw, 2rem)',
 });
 
-export const header = style({
-  maxWidth: 659,
+export const headerRoot = style({ textDecoration: 'none' });
+export const notesLink = style({
+  fontSize: 11,
+  textDecoration: 'none',
+  selectors: {
+    '&:hover': {
+      textDecoration: 'underline',
+    },
+  },
 });
 export const mainName = style({
   fontSize: 'clamp(1.125rem, 0.976rem + 0.746vw, 1.313rem)',
+  selectors: {
+    [`${headerRoot}:hover &`]: {
+      textDecoration: 'underline',
+    },
+  },
 });
 export const subName = style({
   color: gray.gray11,

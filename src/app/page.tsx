@@ -3,13 +3,11 @@ import { contacts, projects, bio } from './data';
 import { Project } from './components/Project';
 import { Contact } from './components/Contact';
 import * as styles from './page.css';
+import Header from './components/Header';
 
 const Index: FC = () => (
   <main className={styles.main}>
-    <header>
-      <h1 className={styles.mainName}>Gregory Nathan Jinsoo Monroe</h1>
-      <span className={styles.subName}>고진수</span>
-    </header>
+    <Header />
     <div className={styles.content}>
       <section className={styles.projects}>
         {projects.map((project) => (
