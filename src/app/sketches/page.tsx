@@ -1,4 +1,7 @@
 import React from 'react';
+import Link from 'next/link';
+import Header from '../components/Header';
+import * as styles from './page.css';
 import { getDirectories } from './utils';
 
 const sketchesPath = `./src/app/sketches`;
@@ -8,12 +11,15 @@ const dateFilenames = dirs
   .sort((a, b) => b.localeCompare(a));
 
 const Sketches = () => (
-  <main>
-    <h2>sketches</h2>
-    <ol>
+  <main className={styles.root}>
+    <Header />
+    <h2>Sketches</h2>
+    <ol className={styles.ol}>
       {dateFilenames.map((dfn) => (
         <li key={dfn}>
-          <a href={`./sketches/${dfn}`}>{dfn}</a>
+          <Link className={styles.link} href={`./sketches/${dfn}`}>
+            {dfn}
+          </Link>
         </li>
       ))}
     </ol>
