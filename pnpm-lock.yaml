@@ -46,7 +46,7 @@ importers:
         version: 2.2.4(react@18.2.0)
       vitest:
         specifier: 1.4.0
-        version: 1.4.0(@types/node@20.10.6)(happy-dom@14.12.0)(terser@5.19.4)
+        version: 1.4.0(@types/node@20.10.6)(happy-dom@15.10.2)(terser@5.19.4)
     devDependencies:
       '@testing-library/dom':
         specifier: 10.1.0
@@ -100,8 +100,8 @@ importers:
         specifier: 4.6.0
         version: 4.6.0(eslint@8.56.0)
       happy-dom:
-        specifier: 14.12.0
-        version: 14.12.0
+        specifier: 15.10.2
+        version: 15.10.2
       prettier:
         specifier: 3.1.1
         version: 3.1.1
@@ -1127,6 +1127,7 @@ packages:
 
   acorn-import-assertions@1.9.0:
     resolution: {integrity: sha512-cmMwop9x+8KFhxvKrKfPYmN6/pKTYYHBqLa0DfvVZcKMJWNyWLnaqND7dx/qn66R7ewM1UX5XMaDVP5wlVTaVA==}
+    deprecated: package has been renamed to acorn-import-attributes
     peerDependencies:
       acorn: ^8
 
@@ -1849,9 +1850,9 @@ packages:
   graphemer@1.4.0:
     resolution: {integrity: sha512-EtKwoO6kxCL9WO5xipiHTZlSzBm7WLT627TqC/uVRd0HKmq8NXyebnNYxDoBi7wt8eTWrUrKXCOVaFq9x1kgag==}
 
-  happy-dom@14.12.0:
-    resolution: {integrity: sha512-dHcnlGFY2o2CdxfuYpqwSrBrpj/Kuzv4u4f3TU5yHW1GL24dKij4pv1BRjXnXc3uWo8qsCbToF9weaDsm/He8A==}
-    engines: {node: '>=16.0.0'}
+  happy-dom@15.10.2:
+    resolution: {integrity: sha512-NbA5XrSovenJIIcfixCREX3ZnV7yHP4phhbfuxxf4CPn+LZpz/jIM9EqJ2DrPwgVDSMoAKH3pZwQvkbsSiCrUw==}
+    engines: {node: '>=18.0.0'}
 
   has-bigints@1.0.2:
     resolution: {integrity: sha512-tSvCKtBr9lkF0Ex0aQiP9N+OpV4zi2r/Nee5VkRDbaqv35RLYMzbwQfFSZZH0kR+Rd6302UJZ2p/bJCEoR3VoQ==}
@@ -5193,7 +5194,7 @@ snapshots:
 
   graphemer@1.4.0: {}
 
-  happy-dom@14.12.0:
+  happy-dom@15.10.2:
     dependencies:
       entities: 4.5.0
       webidl-conversions: 7.0.0
@@ -6637,7 +6638,7 @@ snapshots:
       fsevents: 2.3.3
       terser: 5.19.4
 
-  vitest@1.4.0(@types/node@20.10.6)(happy-dom@14.12.0)(terser@5.19.4):
+  vitest@1.4.0(@types/node@20.10.6)(happy-dom@15.10.2)(terser@5.19.4):
     dependencies:
       '@vitest/expect': 1.4.0
       '@vitest/runner': 1.4.0
@@ -6661,7 +6662,7 @@ snapshots:
       why-is-node-running: 2.2.2
     optionalDependencies:
       '@types/node': 20.10.6
-      happy-dom: 14.12.0
+      happy-dom: 15.10.2
     transitivePeerDependencies:
       - less
       - lightningcss
